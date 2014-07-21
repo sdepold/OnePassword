@@ -60,16 +60,20 @@
         },
 
         applyListView: function (element) {
-            var $listView = WinJS.Utilities.query("#itemListView", element)[0].winControl
+            var listView = WinJS.Utilities.query("#itemListView", element)[0]
 
-            $listView.layout = { type: WinJS.UI.ListLayout }
-            $listView.itemDataSource = this.lists.groupedList.dataSource
-            $listView.groupDataSource = this.lists.groupedList.groups.dataSource
-            $listView.itemTemplate = WinJS.Utilities.query("#itemTemplate", element)[0]
-            $listView.groupHeaderTemplate = WinJS.Utilities.query('#itemHeaderTemplate', element)[0]
+            if (listView) {
+                var $listView = WinJS.Utilities.query("#itemListView", element)[0].winControl
 
-            $listView.removeEventListener("iteminvoked", openItem)
-            $listView.addEventListener("iteminvoked", openItem)
+                $listView.layout = { type: WinJS.UI.ListLayout }
+                $listView.itemDataSource = this.lists.groupedList.dataSource
+                $listView.groupDataSource = this.lists.groupedList.groups.dataSource
+                $listView.itemTemplate = WinJS.Utilities.query("#itemTemplate", element)[0]
+                $listView.groupHeaderTemplate = WinJS.Utilities.query('#itemHeaderTemplate', element)[0]
+
+                $listView.removeEventListener("iteminvoked", openItem)
+                $listView.addEventListener("iteminvoked", openItem)
+            }
         },
 
         observeSearchField: function (element) {
