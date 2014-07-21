@@ -8,6 +8,7 @@
 
         var item = this.lists.filteredList.getAt(e.detail.itemIndex)
 
+        WinJS.Utilities.query('#search-flyout')[0].classList.add('hidden')
         WinJS.Navigation.navigate('/pages/items/show.html', {
             item: item
         })
@@ -91,18 +92,6 @@
                 }
 
                 timeoutIndex = window.setTimeout(fun, 50)
-            })
-        },
-
-        openItem: function (e) {
-            e.preventDefault()
-
-            console.log(e)
-
-            var item = this.lists.filteredList.getAt(e.detail.itemIndex)
-
-            WinJS.Navigation.navigate('/pages/items/show.html', {
-                item: item
             })
         }
     });
