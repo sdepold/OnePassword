@@ -79,6 +79,8 @@
                 $input.focus()
                 $input.select()
                 $input.click()
+            } else {
+                $input.blur()
             }
         }, false)
 
