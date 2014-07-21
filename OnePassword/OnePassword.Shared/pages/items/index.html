@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>index</title>
+
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="index fragment" data-scope="items#index">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">
+                    OnePassword<br />
+                    <small><i class="fa fa-angle-right"></i>&nbsp; Item selection</small>
+                </span>
+            </h1>
+        </header>
+
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="itemHeaderTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="simpleHeaderItem">
+                    <h1>
+                        <span data-win-bind="innerText: title"></span>
+                        <small data-win-bind="innerText: itemCount"></small>
+                    </h1>
+                </div>
+            </div>
+
+            <div id="itemTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="item">
+                    <div class="item-details">
+                        <h3 data-win-bind="innerText: name"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="itemListView" data-win-control="WinJS.UI.ListView"></div>
+        </section>
+    </div>
+</body>
+</html>

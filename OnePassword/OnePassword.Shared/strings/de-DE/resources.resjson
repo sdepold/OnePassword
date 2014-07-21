@@ -1,0 +1,19 @@
+﻿{
+	"categories.all": "Alle Kategorien",
+	"categories.passwords.Password": "Passwörter",
+	"categories.wallet.computer.License": "Software-Lizenzen",
+	"categories.webforms.WebForm": "Logins",
+	"categories.securenotes.SecureNote": "Sichere Notizen",
+	"categories.system.folder.Regular": "Ordner",
+	"categories.wallet.financial.BankAccountUS": "Bankkonten",
+	"categories.wallet.financial.CreditCard": "Kreditkarten",
+	"sync_checks.dropbox_authentication": "Dropbox-Authentifizierung",
+	"sync_checks.dropbox_synced": "Dropbox-Synchronization",
+	"dropbox.authenticate": "Jetzt authentifizieren",
+	"dropbox.sync": "Jetzt synchronisieren",
+	"sync_state.preparing": "Vorbereitung",
+	"sync_state.beforeFindKeyChain": "Suche nach Schlüsselbund",
+	"sync_state.afterFindKeyChain": "Schlüsselbund gefunden",
+	"sync_state.afterReaddir": "Dateistruktur gelesen",
+	"sync_state.afterReadItem": "Datei heruntergeladen"
+}

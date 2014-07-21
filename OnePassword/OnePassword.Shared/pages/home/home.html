@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <div class="fragment homepage" data-scope="home#home">
+        <header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">
+                    OnePassword<br />
+                    <small><i class="fa fa-angle-right"></i>&nbsp; Loading database</small>
+                </span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <progress value="0" max="100" style="width: 100%" />
+
+            <div id="categoryTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="category">
+                    <i data-win-bind="className: icon"></i>
+                    <div class="category-details">
+                        <span class="count" data-win-bind="innerText: itemCount"></span>
+                        <h3 data-win-bind="innerText: displayName"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="categoryListView" data-win-control="WinJS.UI.ListView"></div>
+        </section>
+    </div>
+</body>
+</html>

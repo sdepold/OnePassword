@@ -1,0 +1,13 @@
+﻿[data-scope="misc#sync"] section[role=main] {
+	width: calc(100% - 48px)
+}
+
+[data-scope="misc#sync"] header[role=banner] .titlearea {
+    -ms-grid-column: 3;
+    margin-left: -96px;
+}
+
+[data-scope="misc#sync"] button {
+    color: #0288d1;
+    border-color: #0288d1;
+}

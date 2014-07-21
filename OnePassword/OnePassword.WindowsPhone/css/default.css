@@ -1,0 +1,101 @@
+﻿#contenthost {
+    height: 100%;
+    width: 100%;
+}
+
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .fragment header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 37px 83px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        background: #0288d1;
+    }
+
+        .fragment header[role=banner] .win-navigation-backbutton {
+            -ms-grid-column: 2;
+            margin-top: 57px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 3;
+            margin-top: 25px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+                font-size: 34px;
+                color: #e1f5fe;
+            }
+
+                .fragment header[role=banner] .titlearea .pagetitle small {
+                    position: relative;
+                    top: -30px;
+                    left: 5px;
+                }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        background: #e1f5fe;
+        margin: 0;
+        padding: 24px;
+        color: #0288d1;
+        box-shadow: inset 0px 1px 1px rgba(0,0,0,0.2)
+    }
+
+.win-appbar {
+    background: #0288d1;
+}
+
+    .win-appbar .win-commandimage {
+        color: #e1f5fe;
+    }
+
+    .win-appbar .win-command {
+        border-color: #e1f5fe;
+    }
+
+#search-flyout {
+    display: block;
+    position: fixed;
+    width: calc(100% - 12px);
+    bottom: 6px;
+    margin: 0 6px;
+}
+
+
+    #search-flyout .content {
+        padding: 6px;
+        border: 2px solid #0288d1;
+        background: #e1f5fe;
+        height: calc(100% - 16px - 12px - 24px - 4px);
+    }
+
+        #search-flyout .content input {
+            margin: 0;
+        }
+
+    #search-flyout .title {
+        background: #0288d1;
+        text-transform: uppercase;
+        padding: 6px;
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+    }
+
+
+.hidden {
+    display: none !important;
+}

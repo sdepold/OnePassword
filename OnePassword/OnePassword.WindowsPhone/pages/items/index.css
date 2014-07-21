@@ -1,0 +1,38 @@
+﻿[data-scope="items#index"] section[role=main] {
+	width: calc(100% - 12px);
+    padding: 0 6px;
+}
+
+[data-scope="items#index"] header[role=banner] .titlearea {
+    -ms-grid-column: 3;
+    margin-left: -96px;
+}
+
+#itemListView {
+    height: 100%;
+}
+
+    #itemListView .win-itembox {
+        background: transparent;
+    }
+
+[data-scope="items#index"] .simpleHeaderItem h1 {
+    border-bottom: 4px solid #0288d1;
+    position: relative;
+}
+
+    [data-scope="items#index"] .simpleHeaderItem h1 span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #0288d1;
+        color: #e1f5fe;
+    }
+
+    [data-scope="items#index"] .simpleHeaderItem h1 small {
+        position: absolute;
+        right: 6px;
+        bottom: 4px;
+    }

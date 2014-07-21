@@ -1,0 +1,12 @@
+﻿@import url(//Microsoft.Phone.WinJS.2.1/css/ui-dark.css);
+
+@font-face {
+    font-family: 'robotoregular';
+    src:url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "robotoregular" !important;
+}

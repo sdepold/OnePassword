@@ -1,0 +1,19 @@
+﻿{
+	"categories.all": "All categories",
+	"categories.passwords.Password": "Passwords",
+	"categories.wallet.computer.License": "Software Licenses",
+	"categories.webforms.WebForm": "Logins",
+	"categories.securenotes.SecureNote": "Secure Notes",
+	"categories.system.folder.Regular": "Folders",
+	"categories.wallet.financial.BankAccountUS": "Bank Accounts",
+	"categories.wallet.financial.CreditCard": "Credit Cards",
+	"sync_checks.dropbox_authentication": "Dropbox authentication",
+	"sync_checks.dropbox_synced": "Dropbox synchronization",
+	"dropbox.authenticate": "Authenticate now",
+	"dropbox.sync": "Synchronize now",
+	"sync_state.preparing": "Preparing",
+	"sync_state.beforeFindKeyChain": "Searching keychain",
+	"sync_state.afterFindKeyChain": "Found keychain",
+	"sync_state.afterReaddir": "Read remote file structure",
+	"sync_state.afterReadItem": "Fetched new item from dropbox"
+}

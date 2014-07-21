@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OnePassword.WindowsPhone</title>
+
+    <link rel="stylesheet" href="/css/ui-themed.css" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <script src="/js/vendor/crypto.js"></script>
+    <script src="/js/vendor/dropbox.js"></script>
+    <script src="/js/one_password/index.js"></script>
+    <script src="/js/one_password/crypto.js"></script>
+    <script src="/js/one_password/database.js"></script>
+    <script src="/js/one_password/encryption_keys.js"></script>
+    <script src="/js/one_password/contents.js"></script>
+    <script src="/js/one_password/helpers/index.js"></script>
+    <script src="/js/one_password/helpers/dropbox.js"></script>
+    <script src="/js/one_password/helpers/one_password.js"></script>
+
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body class="phone">
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+    
+    <div id="search-flyout" class="hidden">
+        <div class="title">Search</div>
+        <div class="content">
+            <input type="text" name="query" value="" />
+        </div>
+    </div>
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom', layout:'commands'}">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'home', label:'Update data', icon:'home'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'search', label:'Search', icon:'find'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'lock', label:'Lock', icon:'protecteddocument'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'update-data', label:'Update data', icon:'sync'}" type="button"></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿[data-scope="items#show"] section[role=main] {
+	width: calc(100% - 12px);
+    padding: 0 6px;
+}
+
+[data-scope="items#show"] header[role=banner] .titlearea {
+    -ms-grid-column: 3;
+    margin-left: -96px;
+}
+
+[data-scope="items#show"] .detail {
+    font-family: "robotoregular" !important;
+    text-transform: uppercase;
+}
+
+    [data-scope="items#show"] .detail input {
+        font-family: "robotoregular" !important;
+        background: transparent;
+        color: #0288d1;
+        border: 0;
+    }
+
+    [data-scope="items#show"] .detail input:focus {
+        outline: 0;
+    }

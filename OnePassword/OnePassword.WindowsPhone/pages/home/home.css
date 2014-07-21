@@ -1,0 +1,86 @@
+﻿[data-scope="home#home"] section[role=main] {
+	width: calc(100% - 12px);
+    padding: 0 6px;
+}
+
+[data-scope="home#home"] header[role=banner] .titlearea {
+    -ms-grid-column: 3;
+    margin-left: -96px;
+}
+
+#categoryListView {
+    height: 100%;
+}
+
+    #categoryListView .win-itembox {
+        background: transparent;
+    }
+
+[data-scope="home#home"] progress {
+    color: #0288d1;
+}
+
+[data-scope="home#home"] .win-listview > .win-vertical .win-container {
+    margin: 10px 18px 0px 7px;
+}
+
+.category {
+    clear: both;
+    height: 64px;
+    position: relative;
+}
+
+    .category h3 {
+        line-height: 40px;
+        display: inline-block;
+    }
+
+    .category .count {
+        right: 0px; 
+        line-height: 40px; 
+        position: absolute;
+    }
+
+    .category i {
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left;
+        font-size: 40px;
+        padding: 12px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+        .category i.ion-ios7-box {
+            font-size: 60px;
+            position: relative;
+            top: -6px;
+        }
+
+        .category i.ion-unlocked {
+            font-size: 44px;
+            position: relative;
+            top: -4px;
+        }
+
+        .category i.ion-document-text {
+            font-size: 54px;
+            position: relative;
+            top: -6px;
+        }
+
+        .category i.ion-folder {
+            font-size: 52px;
+            position: relative;
+            top: -4px;
+        }
+
+        .category i.ion-cash {
+            font-size: 36px;
+        }
+
+    .category-details {
+        float: left;
+        padding: 12px;
+    }
