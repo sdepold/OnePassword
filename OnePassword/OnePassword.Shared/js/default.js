@@ -72,16 +72,25 @@
           , appBar = $appBar.winControl
 
         appBar.getCommandById("search").addEventListener("click", function (e) {
-            var $flyout = WinJS.Utilities.query('#search-flyout')[0]
-              , $input = WinJS.Utilities.query('input', $flyout)[0]
+            var toggleSearchBar = function () {
+                var $flyout = WinJS.Utilities.query('#search-flyout')[0]
+                  , $input = WinJS.Utilities.query('input', $flyout)[0]
 
-            if (!$flyout.classList.toggle('hidden')) {
-                $input.focus()
-                $input.select()
-                $input.click()
-            } else {
-                $input.blur()
+                if (!$flyout.classList.toggle('hidden')) {
+                    $input.focus()
+                    $input.select()
+                    $input.click()
+                } else {
+                    $input.blur()
+                }
             }
+
+            if (WinJS.Utilities.query('[data-scope="home#home"]').length > 0) {
+                var list = WinJS.Utilities.query("#categoryListView")[0].winControl
+                list.dispatchEvent('iteminvoked', { detail: { itemIndex: 0 } })
+            }
+
+            toggleSearchBar()
         }, false)
 
         appBar.getCommandById("update-data").addEventListener("click", function (e) {
