@@ -5,6 +5,8 @@
 
     WinJS.UI.Pages.define("/pages/misc/sync.html", {
         ready: function (element, options) {
+            WinJS.Resources.processAll()
+
             this.addCheckList(element)
             this.addActionButton(element)
         },
@@ -15,8 +17,7 @@
             OnePassword.Helpers.OnePassword.hasCache(function (result) {
                 var checks = {
                     dropbox_authentication: OnePassword.Helpers.Dropbox.isAuthenticated(),
-                    dropbox_synced: result,
-                    yaddi: false
+                    dropbox_synced: result
                 }
 
                 Object.keys(checks).forEach(function (name) {

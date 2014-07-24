@@ -15,5 +15,10 @@
 	"sync_state.beforeFindKeyChain": "Searching keychain",
 	"sync_state.afterFindKeyChain": "Found keychain",
 	"sync_state.afterReaddir": "Read remote file structure",
-	"sync_state.afterReadItem": "Fetched new item from dropbox"
+	"sync_state.afterReadItem": "Fetched new item from dropbox",
+	"pages.misc.sync.sub_title": "Synchronizing",
+	"pages.misc.master_password.sub_title": "Master password",
+	"pages.misc.master_password.teaser": "The master password is used to unlock the 1Password keychain. By default the password is stored until the application is closed. Optionally it can be kept for one day.",
+	"pages.misc.master_password.keep_password": "Keep for a day",
+	"pages.misc.master_password.submit": "Unlock the database"
 }

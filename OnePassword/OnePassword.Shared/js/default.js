@@ -51,7 +51,7 @@
                 return sched.requestDrain(sched.Priority.aboveNormal + 1);
             }).then(function () {
                 ui.enableAnimations();
-            });
+            })
 
             args.setPromise(p);
         }

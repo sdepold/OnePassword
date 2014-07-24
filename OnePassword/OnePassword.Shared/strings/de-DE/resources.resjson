@@ -15,5 +15,10 @@
 	"sync_state.beforeFindKeyChain": "Suche nach Schlüsselbund",
 	"sync_state.afterFindKeyChain": "Schlüsselbund gefunden",
 	"sync_state.afterReaddir": "Dateistruktur gelesen",
-	"sync_state.afterReadItem": "Datei heruntergeladen"
+	"sync_state.afterReadItem": "Datei heruntergeladen",
+	"pages.misc.sync.sub_title": "Synchronisation",
+	"pages.misc.master_password.sub_title": "Hauptpasswort",
+	"pages.misc.master_password.teaser": "Das Hauptpassword wird benötigt, um die 1Password-Bibliothek zu entschlüsseln. Standardmäßig wird das Hauptpassword bis zum Schließen des Applikation gespeichert. Optional können Sie es für einen Tag speichern.",
+	"pages.misc.master_password.keep_password": "Für einen Tag speichern",
+	"pages.misc.master_password.submit": "Datenbank entschlüsseln"
 }
